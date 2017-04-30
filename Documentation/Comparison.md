@@ -1,7 +1,7 @@
 Go and Swift 
-1 = Austin
-2 = Ryon 
-3 = Wills
+1 Austin
+2 Ryon 
+3 Wills
 
 * 1 - Language purpose/genesis
   * Why was the language created?
