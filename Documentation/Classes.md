@@ -39,7 +39,55 @@ To create an instance of a class in Swift users should use the "let" keyword fol
 let myDog = Dog(name: "Sherman", breed: "Lab", age: 10)
 ```
 
-To de-initialize a class in Swift, users should use the deint keyword followed by a set of curly braces. Inside the curly braces users can then define the procedure for initializing the class. De-initializing a class is not necessary in Swift since the Automatic Reference Counter will automatically free up any allocated memory when the number of references to a class drops to zero. The following code shows the implementation of deint in the dog class:
+To de-initialize a class in Swift, users should use the `deinit` keyword followed by a set of curly braces inside of the class declaration. Inside the curly braces users can then define the procedure for initializing the class. De-initializing a class is not necessary in Swift since the Automatic Reference Counter will automatically free up any allocated memory when the number of references to a class drops to zero.
+
+The following is a program for crating a dog class and printing information from it:
+
+```swift
+import Cocoa
+
+var str = "Hello, playground"
+
+class Dog {
+    var name : String
+    var breed : String
+    var _age : Int = 0
+    var age :  Int {
+        get {
+            return _age * 7
+        }
+        set (newAge) {
+            if newAge >= 0 {
+                _age = newAge
+            }
+            else {
+                print("Error: Age cannot be less than zero")
+            }
+        }
+    }
+    
+    init(name:String, breed:String, age: Int) {
+        self.name = name
+        self.breed = breed
+        self.age = age
+    }
+    
+}
+
+let myDog = Dog(name: "Sherman", breed: "Lab", age: 10)
+
+// Get is triggered for age in the Dog class
+print("\(myDog.name) is a \(myDog.age) year old \(myDog.breed)")
+
+// Set is triggered for age in the class
+myDog.age = 11;
+
+// Get is triggered for age in the Dog class
+print("\(myDog.name) is now \(myDog.age) years old")
+```
+Expected output:
+1. "Sherman is a 10 year old Lab"
+1. "Sherman is now 11 years old"
 
 # Classes in Go
 
