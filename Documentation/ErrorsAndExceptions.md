@@ -43,33 +43,34 @@ do {
 The following code is an example of a program that handles errors using the `do-catch` structure:
 
 ```swift
-enum TeslaError: Error {
-    case lostGPS
+enum PohoneError: Error {
+    case noSignal
     case lowBattery
 }
 
-var lostGPS: Bool = true
+var noSignal: Bool = true
 var lowBattery: Bool = false
 
-func autoDriveTesla() {
-    if lostGPS {
-        print("I'm lost, bruh. Hold me tight")
-        // A lot more code
+func checkPhoneErrors() {
+    if noSignal {
+        print("No signal, need better reception!")
+        // Do something about the error
     }
     if lowBattery {
-        print("HURRY! 💀")
-        // Loads of code 
+        print("Low batter, charge your phone!")
+        // Do something about the error
     }
 }
 
 do {
-    try autoDriveTesla()
-} catch TeslaError.lostGPS {
-    print("Bruh, I'm lost. Hold me tight")
-} catch TeslaError.lowBattery {
-    print("HURRY! 💀")
+    try checkPhoneErrors()
+} catch PohoneError.noSignal {
+    print("No signal, need better reception!")
+} catch PohoneError.lowBattery {
+    print("Low batter, charge your phone!")
 }
 ```
+Expected output: "No signal, need better reception!"
 
 Finally, Swift allows users to convert errors to optional values. `try?` can be used to evaluate an expression and determine if an error has been thrown. If an error is thrown when `try?` is evaluated, then the expression will evaluate to `nil`. An example of a function that uses `try?` might look like this:
 
