@@ -9,6 +9,6 @@ Languages to be Compared: Go and Swift
 * [Classes](Documentation/Classes.md)
 * [Properties](Documentation/Properties.md)
 * [Memory Management](Documentation/MemoryManagement.md)
-* [Error handling an Exceptions](Documentation/ErrosAndExceptions.md)
+* [Error handling and Exceptions](Documentation/ErrorsAndExceptions.md)
 * [Multithreading](Documentation/Multithreading.md)
 * [Singletons](Documentation/Singletons.md)
