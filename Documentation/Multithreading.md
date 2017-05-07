@@ -1,3 +1,5 @@
+[Home](../README.md)
+
 # Multithreading in Swift
 
 The Swift language allows users to implement multithreading with the use of Grand Central Dispatch (GCD) API.  Swift has shifted away from conventional threads in favor of asynchronous functions. GCD moves much of the code typically written for managing down to the system level, providing a higher level abstraction. Swift provides users with several different types of queues for executing code as threads. Two types of queues provided in Swift are:
@@ -88,3 +90,5 @@ func main() {
 }
 
 ```
+
+[Home](../README.md)
