@@ -1,3 +1,5 @@
+[Home](../README.md)
+
 # Errors and Exception Handling in Swift
 The Swift programing language includes server ways of handling errors and exceptions. Swift provides the `Error` protocol for users to represent errors. The `Error` protocol is an empty protocol which allows users can use with enumerations to model error conditions. An `Error` enumeration might look something like this:
 
@@ -116,3 +118,5 @@ func main() {
 ```
 
 After functions are executed it is common practice to immediately check for errors to deal with them as they arise.
+
+[Home](../README.md)
