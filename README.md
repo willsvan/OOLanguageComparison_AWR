@@ -3,3 +3,9 @@
 Group Members: Ryon Siebel, Wills Van Doorn, and Austin Kauble
 
 Languages to be Compared: Go and Swift
+
+## Comparison Criteria
+
+* [Classes](Documentation/Classes.md)
+* [Properties](Documentation/Properties.md)
+* [Memory Management](Documentation/MemoryManagement.md)
