@@ -1,3 +1,5 @@
+[Home](../README.md)
+
 # Properties in Swift
 
 The Swift language programming language provides the "get" and "set" keywords which can be used inside of declaration to assign values. The "get" and "set" can be used like this:
@@ -164,3 +166,5 @@ func main() {
         fmt.Println(age)
 }
 ```
+
+[Home](../README.md)
