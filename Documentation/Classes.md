@@ -1,3 +1,5 @@
+[Home](../README.md)
+
 # Classes in Swift
 
 The Swift programming language allows programmers to create both structs and classes. Class and struct declarations are created using the "class" and "struct" keywords respectively and simply including the appropriate data types and functions. To following code is an example declaring a dog class in Swift:
@@ -70,3 +72,5 @@ myDog := NewDog("Sherman", "Lab", 10)
 ```
 
 The Go language does not provide a method for de-initializing or deconstructing a class since memory management if handled automatically for the user by the garbage collector.
+
+[Home](../README.md)
