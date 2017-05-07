@@ -121,4 +121,43 @@ myDog := NewDog("Sherman", "Lab", 10)
 
 The Go language does not provide a method for de-initializing or deconstructing a class since memory management if handled automatically for the user by the garbage collector.
 
+The following is a program for crating a dog class and printing information from it:
+```go
+package main
+
+import "fmt"
+
+type Dog struct {
+        name string;
+        breed string;
+        age int;
+}
+
+func NewDog(name string, breed string, age int) Dog {
+        d := new(Dog)
+        d.name = name
+        d.breed = breed
+        d.age = age
+        return *d
+}
+
+func (d Dog) GetHumanYears() int {
+        return d.age * 7
+}
+
+func (d *Dog) SetDogAge(age int) {
+        d.age = age
+}
+
+func main() {
+        myDog := NewDog("Sherman", "Lab", 10)
+        fmt.Printf("%s is a %d year old %s\n", myDog.name, myDog.age, myDog.breed)
+        myDog.SetDogAge(11)
+        fmt.Printf("%s is now %d years old\n", myDog.name, myDog.age)
+}
+```
+Expected output:
+1. "Sherman is a 10 year old Lab"
+1. "Sherman is now 11 years old"
+
 [Home](../README.md)
