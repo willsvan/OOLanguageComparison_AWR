@@ -1,3 +1,5 @@
+[Home](../README.md)
+
 # Singletons in Swift
 The Swift programming language allows for implementation of the singleton design pattern. In Swift, singletons can be lazily or eagerly instantiated. According to Apple, the lazy initialization of a global variable is run the first time that global variable is accessed and is launched as `dispatch_once` to ensure atomic initialization. A singleton can be lazily instantiated by creating a global variable with private initializer. The following code is the easiest way to create and lazily instantiate a singleton in Swift: 
 
@@ -60,3 +62,5 @@ func GetInstance() *singleton {
     return instance
 }
 ``` 
+
+[Home](../README.md)
