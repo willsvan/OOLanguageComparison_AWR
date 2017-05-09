@@ -17,7 +17,7 @@ Languages to be Compared: Go and Swift
 * [Reflection](Documentation/Reflection.md)
 * [Memory Management](Documentation/MemoryManagement.md)
 * [Comparisons of References and Values](Documentation/ComparisonsOfReferencesAndValues.md)
-* [Null/Nil References](Documentation/Nils.md)
+* [Null/Nil References](Documentation/Nil.md)
 * [Error handling and Exceptions](Documentation/ErrorsAndExceptions.md)
 * [Lambda Expressions, Closures, and Functions as Types](Documentation/LambdaExpressionsAndClosures.md)
 * [Event Handling](Documentation/EventHandling.md)
