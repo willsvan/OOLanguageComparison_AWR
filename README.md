@@ -21,6 +21,7 @@ Languages to be Compared: Go and Swift
 * [Error handling and Exceptions](Documentation/ErrorsAndExceptions.md)
 * [Lambda Expressions, Closures, and Functions as Types](Documentation/LambdaExpressionsAndClosures.md)
 * [Event Handling](Documentation/EventHandling.md)
+* [Procedural Programming](Documentation/ProceduralProgramming.md)
 * [Functional Programming](Documentation/Functional.md)
 * [Multithreading](Documentation/Multithreading.md)
 * [Singletons](Documentation/Singletons.md)
